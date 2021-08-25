@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/car-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.topnav {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    transition:500ms ease;
+    background: transparent;
+}
+
+.topnav.scrolled{
+    background:#000;
+    width: 100%;
+    /* padding-top: 0; */
+    top: 2%;
+    z-index: 1;
+}
+
+
+.topnav .logo a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa-car:before {
+    margin-right: 5px;
+}
+  
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+color: #770a0a;
+}
+  
+.topnav a.active {
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+.about-button {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.about-button a {
+    padding: 15px;
+    border: 2px solid rgb(138, 134, 134);
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+}
+
+.about-button a:hover {
+    border: 3px solid #002d36;
+}
+
+/* start sections */
+
+.about, .feature, .price {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 5%;
+}
+
+.about h1, .feature h1, .price h1 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about p, .feature p, .price p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.layer {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background-color: rgba(119, 10, 10, 0.7);
+
+}
+
+.layer h2 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h2 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.about ul {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.about ul li a {
+    color: black;
+    font-size: 25px;
+}
+
+.about ul li a:hover {
+    color: #770a0a;
+}
+
+/* feature */
+
+.feature {
+    border-top: 2px solid #770a0a;
+}
+
+.feature-specs {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-colums {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #002d36;
+    color: white;
+    margin: auto;
+    display: block;
+}
+
+.feature-col {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.feature-image {
+	width: 40%;
+	height: 40%; 
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svg-content { 
+	width: 100%; 
+}
+
+
+/* price */
+
+.price-form {
+	font-family: 'Open Sans Condensed', arial, 'sans';
+	width: 50%;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+.price-form h2 {
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+
+.price-form .car-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price-form input[type="text"],
+.price-form input[type="date"],
+.price-form input[type="datetime"],
+.price-form input[type="email"],
+.price-form input[type="number"],
+.price-form input[type="search"],
+.price-form input[type="time"],
+.price-form input[type="url"],
+.price-form input[type="password"],
+.price-form textarea,
+.price-form select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+
+.price-form input[name="make"],
+.price-form input[name="year"],
+.price-form input[name="model"],
+.price-form input[name="trim"] {
+    width: 45%;
+}
+
+.price-form input[type="button"], 
+.price-form input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #770a0a;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #770a0a;
+	box-shadow: inset 0px 1px 0px 0px #770a0a;
+	background-color: #770a0a;
+	border: 1px solid #770a0a;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 15px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.price-form input[type="button"]:hover, 
+.price-form input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #770a0a 5%, #770a0a 100%);
+	background-color: #770a0a;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    text-align: center;
+    padding: 20px;
+}
+
+footer div p {
+    margin-top: 10px;
+}
+
+@media(max-width: 320px)  {
+    .about-button a {
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px)  {
+    .row {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+        display: block;
+        width: 100%;
+    }
+    .menu a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .feature-image {
+        width: 60%;
+	    height: 60%; 
+    }
+
+    .price-form {
+        width: 90%;
+    }
+
+    .price-form input[name="make"],
+    .price-form input[name="year"],
+    .price-form input[name="model"],
+    .price-form input[name="trim"] {
+        width: 100%;
+    }
+
+
+    footer {
+        flex-flow: column;
+    }
+
+   
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: fixed;
+        background:#000;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}

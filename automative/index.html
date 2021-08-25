@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <title>Automative</title>
+</head>
+<body>
+    <header class="banner" id="Top">
+        <nav class="topnav" id="theTopnav">
+            <div class="logo">
+                <a href="#Top"><i class="fas fa-car"></i>Automotive</a>
+            </div>
+            <div class="menu">
+                <a href="#Top" class="active">Home</a>
+                <a href="#Feature">Features</a>
+                <a href="#Price">Price</a>
+                <a href="#Contact">Contact</a>
+                <!-- <a href="#">Book Appointment</a> -->
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="about-button">
+            <a class="smoothscroll" href="#About">More About Us</a>
+        </div>
+    </header>
+
+    <section class="about" id="About">
+        <h1>About us</h1>
+        <p>We've been in the industry for 25 years, with 3 different shops in 3 different cities, and we've been working on all kinds off cars, and of course with all kinds of clients. If you have a job for us, we are determined to make sure you achieve your dream.</p>
+        <div class="row">
+            <div class="about-col">
+                <img src="img/firstCar.jpg" alt="car">
+                <div class="layer">
+                    <h2>LONDON</h2>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="img/secondCar.jpg" alt="car">
+                <div class="layer">
+                    <h2>WASHINGTON</h2>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="img/thirdCar.jpg" alt="car">
+                <div class="layer">
+                    <h2>NEW YORK</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="about-social">        
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             </ul> 
+        </div>
+        
+    </section>
+
+    <section class="feature" id="Feature">
+        <h1>Features</h1>
+        <p>We work with professionals to ensure that your car is in good hands and that your expectations are fulfilled.</p>
+        <div class="feature-specs">
+            <div class="feature-image">
+                <img src="images/undraw_by_my_car_ttge.svg" class="svg-content" alt="car ilustration">
+            </div>
+            <div class="feature-colums">
+                <div class="feature-col">
+                   <h4>Our mechanics have the highest certifications and accreditations.</h4>
+                </div>
+                <div class="feature-col">
+                    <h4>We respect the international standars for cleanliness, having a well organized shop.</h4>
+                 </div> 
+                 <div class="feature-col">
+                    <h4>Our mechanics have a relevant experience in the filed.</h4>
+                 </div> 
+                 <div class="feature-col">
+                    <h4>The pricing is up to your satisfaction level.</h4>
+                 </div> 
+                 <div class="feature-col">
+                    <h4>We offer a wide variety of car repair services.</h4>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="Price">
+        <h1>Prices</h1>
+        <p>Know the cost of your car repair -- it's fast and free.
+        Over 600,000 car repair estimates provided since 2012. Just fill out the form and get your estimate immediately.</p>
+        <div class="price-form">
+            <h2>Estimate</h2>
+            <form>
+              <input type="text" name="zipCode" placeholder="Zip Code" />
+              <div class="car-details">
+                <input type="text" name="make" placeholder="Make" />
+                <input type="text" name="year" placeholder="Year" />
+                <input type="text" name="model" placeholder="Model" />
+                <input type="text" name="trim" placeholder="Trim" />
+              </div>
+              <input type="text" name="service" placeholder="Service" />
+              <input type="button" value="Send Message" />
+            </form>
+          </div>
+    </section>
+    
+    <footer id="Contact">
+        <div>
+            <p>Address:</p>
+            <p>16 Street Suburb Country 600</p>
+        </div>
+        <div>
+            <p>Phone:</p>
+            <p>+0742567598</p>
+        </div>
+        <div>
+            <p>Email:</p>
+            <p>prisecaru.emilia@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
