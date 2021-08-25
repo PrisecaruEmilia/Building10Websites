@@ -364,7 +364,14 @@ footer div p {
         transform: translate(0%, 0%);
         display: block;
         width: 100%;
+        background: black;
+        z-index: 1;
     }
+
+    .topnav.scrolled {
+        top: 0%;
+    }
+
     .menu a {display: none;}
     .topnav a.icon {
         float: right;
@@ -400,16 +407,21 @@ footer div p {
 @media screen and (max-width: 768px) {
     .topnav.responsive {
         position: fixed;
-        background:#000;
         width: 100%;
-        top: 0;
+        background: black;
         z-index: 1;
     }
+
+    /* .topnav.responsive.scrolled {
+        top: 0%;
+    } */
+
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
       top: 30px;
     }
+
     .topnav.responsive a {
       float: none;
       display: block;
