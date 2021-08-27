@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    background: rgb(26, 25, 25);
+    height: 100vh;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 15rem;
+  }
+
+  .image-container {
+    width: 50%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .description-container {
+    width: 50%;
+    height: auto;
+    padding: 50px 0 50px 50px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .description-background {
+    background-color: #f4d026;
+    width: 100%; 
+    height: auto; 
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .feature {
+    padding: 30px; 
+    background-color: #f8d346;
+  }
+
+  .feature h1 {
+    text-align: center;
+  }
+
+  .feature .features {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feature-col {
+    color: white;
+    border: 2px solid rgb(77, 72, 72);
+    background: rgb(77, 72, 72);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .feature-col p {
+    margin-top: 5px;
+  }
+
+ 
+  @media (max-width: 768px) {
+    .main-content {
+      display: block;
+      top: 8rem;
+    }
+
+    .image-container, .description-container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .feature .features {
+      display: block;
+      width: 50%;
+      margin: auto;
+    }
+
+    .feature-col {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 736px) and (orientation: landscape) {
+    .description-container {
+      display: none;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .feature .features {
+      width: 80%;
+    }
+  }
+  
+  .ham {
+    position: fixed;
+    /* keep the hamburger button above everything */
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: rgb(26, 25, 25) solid 1px;
+    background: rgb(26, 25, 25);
+    cursor: pointer;
+    color: white;
+  }
+  
+  .xIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    transform: translateY(-100%); 
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+    z-index: 1;
+  }
+  
+  li {
+    padding: 1rem 0;
+  }
+  
+  .menuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuLink:hover {
+    text-decoration: underline;
+  }

@@ -5,12 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>Lambo</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- JS -->
+     <script src="index.js" defer></script>
+    <title>Lambo landing page</title>
 </head>
 <body>
-    
+    <header class="header">
+        <button class="ham">
+            <span class="menuIcon material-icons">
+              menu
+            </span>
+            <span class="xIcon">
+              close
+            </span>
+        </button>
+        <ul class="menu">
+            <li><a class="menuLink" href="#">Home</a></li>
+            <li><a class="menuLink" href="#Features">Features</a></li>
+            <li><a class="menuLink" href="#">About</a></li>
+            <li><a class="menuLink" href="#">Contacts</a></li>
+        </ul>
+        <div class="main-content">
+            <div class="image-container">
+                <img src="img/lamborghini-aventador.png" alt="lamborghini">
+            </div>
+            <div class="description-container">
+                <div class="description-background">
+                   <svg viewBox="0 0 56 18">
+                    <text x="0" y="15">LA</text>
+                  </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="feature" id="Features">
+        <h1>Features</h1>
+        <div class="features">
+            <div class="feature-col">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus!</p>
+            </div>
+            <div class="feature-col">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus!</p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            </div>
+            <div class="feature-col">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus!</p>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
